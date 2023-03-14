@@ -16,6 +16,7 @@ const serverlessConfiguration: AWS = {
     deploymentMethod: "direct",
     runtime: "nodejs14.x",
     region: "us-east-1",
+    stage: "dev",
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
@@ -23,6 +24,8 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1",
       NODE_OPTIONS: "--enable-source-maps --stack-trace-limit=1000",
+
+      REGION: "${self:provider.region}",
       PRODUCTS_TABLE_NAME: "products-table",
       STOCKS_TABLE_NAME: "stocks-table",
     },
