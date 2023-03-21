@@ -9,7 +9,7 @@
     "schemas": {
       "getProductsListResponse": {
         "title": "ProductList",
-        "description": "A list of Products",
+        "description": "A list of Products ",
         "type": "array",
         "items": {
           "type": "object",
