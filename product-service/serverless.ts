@@ -23,13 +23,10 @@ const serverlessConfiguration: AWS = {
     },
     httpApi: {
       cors: {
-        // TODO: pass correct origin for the deployed client from env variable
         allowedOrigins: [
-          "https://d2ubpioqbb5isz.cloudfront.net/",
+          "https://d2ubpioqbb5isz.cloudfront.net",
           "http://localhost:3000",
         ],
-        // allowedHeaders: ["Content-Type", "Authorization"],
-        // allowedMethods: ["GET", "POST"],
         allowedHeaders: ["Content-Type", "Authorization"],
         allowedMethods: ["GET", "POST"],
         maxAge: 6000,
