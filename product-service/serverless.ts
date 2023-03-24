@@ -25,7 +25,7 @@ const serverlessConfiguration: AWS = {
       cors: {
         // TODO: pass correct origin for the deployed client from env variable
         allowedOrigins: [
-          "https://d1ote0jlsfuczu.cloudfront.net",
+          "https://d2ubpioqbb5isz.cloudfront.net/",
           "http://localhost:3000",
         ],
         // allowedHeaders: ["Content-Type", "Authorization"],
