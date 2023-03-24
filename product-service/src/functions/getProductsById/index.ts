@@ -1,7 +1,6 @@
 import { handlerPath } from "@libs/handler-resolver";
-import { DocumentedFunctionConfig } from "src/model/aws";
 
-const functionConfig: DocumentedFunctionConfig = {
+export default {
   handler: `${handlerPath(__dirname)}/handler.main`,
   events: [
     {
@@ -32,29 +31,9 @@ const functionConfig: DocumentedFunctionConfig = {
                 "application/json": "getProductsByIdResponse",
               },
             },
-            {
-              statusCode: 404,
-              responseBody: {
-                description: "Not found error",
-              },
-              responseModels: {
-                "application/text": "notFoundErrorResponse",
-              },
-            },
-            {
-              statusCode: 500,
-              responseBody: {
-                description: "Internal error",
-              },
-              responseModels: {
-                "application/text": "internalErrorResponse",
-              },
-            },
           ],
         },
       },
     },
   ],
 };
-
-export default functionConfig;

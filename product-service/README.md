@@ -1,21 +1,12 @@
-# Product service
+# Serverless - AWS Node.js Typescript
 
-## Functions
+This project has been generated using the `aws-nodejs-typescript` template from the [Serverless framework](https://www.serverless.com/).
 
-- getProductsById
-- getProductsList
-- createProduct
+For detailed instructions, please refer to the [documentation](https://www.serverless.com/framework/docs/providers/aws/).
 
-For Data
+## OpenAPI documentation
 
-- CloudFormation template to create DB stack is in ['dynamodb-template.json'](./dynamodb-template.json)
-- Run `npm run uploadTestData` to populate it with test data
-- Raw test data is in [mock-produucts.json](./src/libs/mock-products.json)
-
-## Swagger documentation
-
-- Run `npm run docs` to open Swagger UI
-- [openapi.json](./openapi.json`, use SwaggerUI to open it
+- `/openapi.json`, use SwaggerUI to open it
 - Run `npm run docs:generate` to update it
 
 ## Installation/deployment instructions
