@@ -10,7 +10,7 @@ const functionConfig: DocumentedFunctionConfig = {
         path: "/products/{productId}",
         documentation: {
           summary: "Returns a product by Id",
-          description: "Returns a Product objecr by its Id.",
+          description: "Returns a Product object by its Id.",
           pathParams: [
             {
               name: "productId",

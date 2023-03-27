@@ -1,7 +1,7 @@
 [
   {
-    "id": 1,
-    "title": "To Kill a MockingbirdaDynamo",
+    "id": "0870b888-cb88-4022-820e-a2021dbe2f12",
+    "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "publisher": "J. B. Lippincott & Co.",
     "publicationDate": "1960-07-11",
@@ -10,8 +10,8 @@
     "count": 8
   },
   {
-    "id": 2,
-    "title": "198a4",
+    "id": "79775204-985a-4b69-881b-5852d317caf9",
+    "title": "1984",
     "author": "George Orwell",
     "publisher": "Secker & Warburg",
     "publicationDate": "1949-06-08",
@@ -20,8 +20,8 @@
     "count": 3
   },
   {
-    "id": 3,
-    "title": "The Great Gatsbytt",
+    "id": "cead5fbd-b79b-4574-8cdf-8b51ca0a21ac",
+    "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "publisher": "Charles Scribner's Sons",
     "publicationDate": "1925-04-10",
@@ -30,7 +30,7 @@
     "count": 15
   },
   {
-    "id": 4,
+    "id": "2294784b-b504-4e39-a93c-6be5d23ec99e",
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "publisher": "T. Egerton, Whitehall",
@@ -40,7 +40,7 @@
     "count": 20
   },
   {
-    "id": 5,
+    "id": "4a4a9fa7-3e70-4d67-a5b6-87ce9bce98a6",
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "publisher": "George Allen & Unwin",
@@ -50,7 +50,7 @@
     "count": 10
   },
   {
-    "id": 6,
+    "id": "ab2446e1-6e3f-4cef-9c3b-e20a16c9f21a",
     "title": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "publisher": "Little, Brown and Company",
@@ -60,7 +60,7 @@
     "count": 0
   },
   {
-    "id": 7,
+    "id": "039a12f8-bef4-434f-b897-1100d518115e",
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "publisher": "George Allen & Unwin",
@@ -70,7 +70,7 @@
     "count": 5
   },
   {
-    "id": 8,
+    "id": "facb45d7-0ec1-4e91-bf4c-f70399707ad8",
     "title": "Harry Potter and the Philosopher's Stone",
     "author": "J.K. Rowling",
     "publisher": "Bloomsbury",
@@ -80,7 +80,7 @@
     "count": 8
   },
   {
-    "id": 9,
+    "id": "22e829bd-f917-4f1f-acb7-3f873850114e",
     "title": "The Da Vinci Code",
     "author": "Dan Brown",
     "publisher": "Doubleday",
@@ -90,7 +90,7 @@
     "count": 10
   },
   {
-    "id": 10,
+    "id": "0835108a-a9ee-4d2f-afe6-1dbeffd07a58",
     "title": "The Hunger Games",
     "author": "Suzanne Collins",
     "publisher": "Scholastic",
@@ -100,7 +100,7 @@
     "count": 300
   },
   {
-    "id": 11,
+    "id": "225e7d89-443c-4b00-9d68-adb746ffe579",
     "title": "The Fault in Our Stars",
     "author": "John Green",
     "publisher": "Dutton Books",
@@ -110,7 +110,7 @@
     "count": 23
   },
   {
-    "id": 12,
+    "id": "45c00cdc-3e8b-483a-afaf-0df3c9c9ff53",
     "title": "The Alchemist",
     "author": "Paulo Coelho",
     "publisher": "HarperCollins",
@@ -120,7 +120,7 @@
     "count": 7
   },
   {
-    "id": 13,
+    "id": "c5c710dc-d9ec-46d0-9a6c-282c3e9edc83",
     "title": "The Unknown Soldier",
     "author": "Väinö Linna",
     "publisher": "Werner Söderström Osakeyhtiö",
@@ -130,7 +130,7 @@
     "count": 2
   },
   {
-    "id": 14,
+    "id": "1631b174-9a1b-49bb-ae7f-e3c18fd55546",
     "title": "The Girl with the Dragon Tattoo",
     "author": "Stieg Larsson",
     "publisher": "Norstedts Förlag",
@@ -140,7 +140,7 @@
     "count": 10
   },
   {
-    "id": 15,
+    "id": "ee49ec40-9e0d-4a41-818e-ff709853e5e7",
     "title": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
     "publisher": "The Russian Messenger",
@@ -150,7 +150,7 @@
     "count": 1
   },
   {
-    "id": 16,
+    "id": "94ead0fd-132d-4e6f-8c9f-6526cce38655",
     "title": "Anna Karenina",
     "author": "Leo Tolstoy",
     "publisher": "The Russian Messenger",
@@ -160,7 +160,7 @@
     "count": 1
   },
   {
-    "id": 17,
+    "id": "88add558-7c1b-4307-8144-6515ae9914db",
     "title": "The Brothers Karamazov",
     "author": "Fyodor Dostoevsky",
     "publisher": "The Russian Messenger",
@@ -170,7 +170,7 @@
     "count": 1
   },
   {
-    "id": 18,
+    "id": "346818f2-5ba6-4bb5-9784-cad20af86ebf",
     "title": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
     "publisher": "Lippincott's Monthly Magazine",
@@ -180,7 +180,7 @@
     "count": 810
   },
   {
-    "id": 19,
+    "id": "d563c4b4-9faa-4e64-9972-cf497ad3e835",
     "title": "The Road",
     "author": "Cormac McCarthy",
     "publisher": "Alfred A. Knopf",
@@ -190,7 +190,7 @@
     "count": 5
   },
   {
-    "id": 20,
+    "id": "3228c1e1-9f50-4e72-9ab9-54a96bdb3981",
     "title": "Slaughterhouse-Five",
     "author": "Kurt Vonnegut",
     "publisher": "Delacorte Press",

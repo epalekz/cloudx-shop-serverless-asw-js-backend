@@ -11,7 +11,7 @@ const functionConfig: DocumentedFunctionConfig = {
         documentation: {
           summary: "Creates new product",
           description:
-            "Creates new product with (optiona) specified stock number",
+            "Creates new product with (optional) specified stock number",
           tags: ["products"],
           requestBody: {
             description: "Product and stock data",
