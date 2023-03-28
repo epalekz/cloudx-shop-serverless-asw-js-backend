@@ -1,7 +1,7 @@
 import { handlerPath } from "@libs/handler-resolver";
+import { DocumentedFunctionConfig } from "src/model/aws";
 
-// TODO: check if schema is correct?
-export default {
+const functionConfig: DocumentedFunctionConfig = {
   handler: `${handlerPath(__dirname)}/handler.main`,
   events: [
     {
@@ -22,9 +22,20 @@ export default {
                 "application/json": "getProductsListResponse",
               },
             },
+            {
+              statusCode: 500,
+              responseBody: {
+                description: "Internal error",
+              },
+              responseModels: {
+                "application/text": "internalErrorResponse",
+              },
+            },
           ],
         },
       },
     },
   ],
 };
+
+export default functionConfig;
