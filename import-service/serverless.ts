@@ -24,13 +24,18 @@ const serverlessConfiguration: AWS = {
       REGION: "${self:provider.region}",
       BUCKET_NAME: "product-file",
     },
-    iamRoleStatements: [
-      {
-        Effect: "Allow",
-        Action: ["s3:*"],
-        Resource: [
-          `arn:aws:s3:::${process.env.BUCKET_NAME}`,
-          `arn:aws:s3:::${process.env.BUCKET_NAME}/*`,
+    iam: {
+      role: {
+        statements: [
+          {
+            Effect: "Allow",
+            Action: [
+              "s3:GetObject",
+              "s3:PutObject",
+              "s3:DeleteObject"
+            ],
+            Resource: "arn:aws:s3:::${self:provider.environment.BUCKET_NAME}/*",
+          },
         ],
       },
     ],
