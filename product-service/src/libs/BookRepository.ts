@@ -37,8 +37,7 @@ function attrValuesToProduct(
   };
 }
 
-// TODO: fix unit tests
-export class BookRepository implements Repository<BookStock, string> {
+export default class BookRepository implements Repository<BookStock, string> {
   private dbClient: DynamoDBDocumentClient;
   private productsTableName: string;
   private stocksTableName: string;

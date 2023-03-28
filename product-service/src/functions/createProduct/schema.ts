@@ -23,7 +23,7 @@ export default {
       type: "string",
     },
     publicationDate: {
-      description: "Date of publiscation in the YYYY-MM-DD format",
+      description: "Date of publication in the YYYY-MM-DD format",
       type: "string",
       format: "date",
     },

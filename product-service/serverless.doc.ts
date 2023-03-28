@@ -1,6 +1,4 @@
 import createProductProps from "@functions/createProduct/schema";
-
-// TODO: update product model according to TS definition. Is there a way to get JSON model from type or interface?
 const productStockProps = {
   type: "object",
   properties: {

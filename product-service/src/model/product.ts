@@ -1,5 +1,4 @@
 import { Stock } from "./stock";
-
 export interface Product {
   id: string;
   title: string;

@@ -32,7 +32,7 @@ const serverlessConfiguration: AWS = {
     httpApi: {
       cors: {
         allowedOrigins: [
-          "https://d21p8059ltqt7z.cloudfront.net",
+          "https://d2ubpioqbb5isz.cloudfront.net",
           "http://localhost:3000",
         ],
         allowedHeaders: ["Content-Type", "Authorization"],
@@ -63,8 +63,6 @@ const serverlessConfiguration: AWS = {
   resources: {
     Description: "Backend stack for My Shop app",
   },
-  // import the function via paths
-  // functions: { getProductsList, getProductsById },
   package: { individually: true },
   custom: {
     esbuild: {

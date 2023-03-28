@@ -10,10 +10,11 @@ const functionConfig: DocumentedFunctionConfig = {
         path: "/products",
         documentation: {
           summary: "Creates new product",
-          description: "Creates new product with (optiona) specified stock number",
+          description:
+            "Creates new product with (optional) specified stock number",
           tags: ["products"],
           requestBody: {
-            description: "Product and stock data"
+            description: "Product and stock data",
           },
           requestModels: {
             "application/json": "createProductRequest",

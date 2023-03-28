@@ -6,7 +6,7 @@
 - getProductsList
 - createProduct
 
-For Data
+## Data
 
 - CloudFormation template to create DB stack is in ['dynamodb-template.json'](./dynamodb-template.json)
 - Run `npm run uploadTestData` to populate it with test data
@@ -15,7 +15,24 @@ For Data
 ## Swagger documentation
 
 - Run `npm run docs` to open Swagger UI
-- [openapi.json](./openapi.json`, use SwaggerUI to open it
+- [openapi.json](./openapi.json) contains OpenAPI definition
+- Run `npm run docs:generate` to update it
+
+## Tests
+
+- Run `npm run test` to run unit tests with Jest
+
+##
+
+# Serverless - AWS Node.js Typescript
+
+This project has been generated using the `aws-nodejs-typescript` template from the [Serverless framework](https://www.serverless.com/).
+
+For detailed instructions, please refer to the [documentation](https://www.serverless.com/framework/docs/providers/aws/).
+
+## OpenAPI documentation
+
+- `/openapi.json`, use SwaggerUI to open it
 - Run `npm run docs:generate` to update it
 
 ## Installation/deployment instructions
