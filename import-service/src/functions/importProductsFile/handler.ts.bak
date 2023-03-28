@@ -21,8 +21,10 @@ const importProductsFile: ValidatedEventAPIGatewayProxyEvent<
       Bucket: process.env.BUCKET_NAME,
       Key: `uploaded/${fileName}`,
     });
-    const signedUrl = await getSignedUrl(s3Client, command, { expiresIn: 3600 });
-    
+    const signedUrl = await getSignedUrl(s3Client, command, {
+      expiresIn: 3600,
+    });
+
     return formatJSONResponse(signedUrl);
   } catch (error) {
     throw createError(500, `Internal error: ${error}`, { expose: true });

@@ -1,7 +1,4 @@
-import Ajv from "ajv";
-import addFormats from "ajv-formats";
-
-const schema = {
+export default {
   type: "object",
   properties: {
     title: {
@@ -45,9 +42,3 @@ const schema = {
     "count",
   ],
 } as const;
-
-const ajv = new Ajv();
-addFormats(ajv);
-export const validate = ajv.compile(schema);
-
-export default schema;

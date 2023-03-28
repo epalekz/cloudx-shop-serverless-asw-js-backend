@@ -8,11 +8,6 @@ const functionConfig: AWS["functions"]["string"] = {
       http: {
         method: "get",
         path: "import",
-        authorizer: {
-          arn: { "Fn::ImportValue": "BasicAuthorizerArn-${self:provider.stage}" },
-          name: "BasicAuthorizerArn-${self:provider.stage}",
-          type: 'token'
-        },
         request: {
           parameters: {
             querystrings: {

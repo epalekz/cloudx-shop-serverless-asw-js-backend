@@ -11,25 +11,6 @@ import {
 import { s3Client } from "@libs/s3client";
 import { Readable } from "stream";
 import * as csv from "csv-parser";
-import { sqsClient } from "@libs/sqsClient";
-import {
-  SendMessageCommand,
-  SendMessageCommandInput,
-} from "@aws-sdk/client-sqs";
-
-async function sendEventToSQS(eventBody: string) {
-  const params: SendMessageCommandInput = {
-    MessageBody: eventBody,
-    QueueUrl: process.env.SQS_QUEUE_URL,
-  };
-
-  try {
-    const data = await sqsClient.send(new SendMessageCommand(params));
-    console.log("Success, message sent", data);
-  } catch (err) {
-    console.log("Error", err);
-  }
-}
 
 const importFileParser = async (event: S3Event) => {
   try {
@@ -47,7 +28,7 @@ const importFileParser = async (event: S3Event) => {
 
     (response.Body as Readable)
       .pipe(csv.default())
-      .on("data", (data) => sendEventToSQS(JSON.stringify(data)));
+      .on("data", (data) => console.log(data));
 
     // After processing,
     // Moving object into "/parsed" folder
