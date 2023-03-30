@@ -10,11 +10,11 @@
         "s3SchemaVersion": "1.0",
         "configurationId": "import-service-dev-importFileParser-9eceafef0fe575eb52543c9070542d86",
         "bucket": {
-          "name": "my-shop-file-import",
+          "name": "product-file",
           "ownerIdentity": {
             "principalId": "A3T4AZ21PZM2VC"
           },
-          "arn": "arn:aws:s3:::my-shop-file-import"
+          "arn": "arn:aws:s3:::product-file"
         },
         "object": {
           "key": "uploaded/mock-products.csv",
