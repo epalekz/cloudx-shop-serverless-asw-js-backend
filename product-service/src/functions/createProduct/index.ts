@@ -6,20 +6,36 @@ const functionConfig: DocumentedFunctionConfig = {
   events: [
     {
       httpApi: {
-        method: "get",
+        method: "POST",
         path: "/products",
         documentation: {
-          summary: "Returns list of products",
-          description: "Returns an array containing all existing products.",
+          summary: "Creates new product",
+          description:
+            "Creates new product with (optional) specified stock number",
           tags: ["products"],
+          requestBody: {
+            description: "Product and stock data",
+          },
+          requestModels: {
+            "application/json": "createProductRequest",
+          },
           methodResponses: [
             {
               statusCode: 200,
               responseBody: {
-                description: "An array of Product objects",
+                description: "A newly created Product object",
               },
               responseModels: {
-                "application/json": "getProductsListResponse",
+                "application/json": "createProductResponse",
+              },
+            },
+            {
+              statusCode: 400,
+              responseBody: {
+                description: "Bad request error",
+              },
+              responseModels: {
+                "application/text": "badRequestErrorResponse",
               },
             },
             {

@@ -1,6 +1,7 @@
 import { handlerPath } from "@libs/handler-resolver";
+import { DocumentedFunctionConfig } from "src/model/aws";
 
-export default {
+const functionConfig: DocumentedFunctionConfig = {
   handler: `${handlerPath(__dirname)}/handler.main`,
   events: [
     {
@@ -9,7 +10,7 @@ export default {
         path: "/products/{productId}",
         documentation: {
           summary: "Returns a product by Id",
-          description: "Returns a Product objecr by its Id.",
+          description: "Returns a Product object by its Id.",
           pathParams: [
             {
               name: "productId",
@@ -31,9 +32,29 @@ export default {
                 "application/json": "getProductsByIdResponse",
               },
             },
+            {
+              statusCode: 404,
+              responseBody: {
+                description: "Not found error",
+              },
+              responseModels: {
+                "application/text": "notFoundErrorResponse",
+              },
+            },
+            {
+              statusCode: 500,
+              responseBody: {
+                description: "Internal error",
+              },
+              responseModels: {
+                "application/text": "internalErrorResponse",
+              },
+            },
           ],
         },
       },
     },
   ],
 };
+
+export default functionConfig;
